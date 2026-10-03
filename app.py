@@ -19,9 +19,21 @@ def save_data(data):
 # ---------------- Embedding Model ----------------
 model = SentenceTransformer(MODEL_NAME)
 
-def compute_embeddings(data):
-    questions = [item["question"] for item in data]
-    embeddings = model.encode(questions, convert_to_tensor=True)
+# ---------------- Embedding Model ----------------
+@st.cache_resource
+def load_model():
+    return SentenceTransformer(MODEL_NAME)
+
+
+model = load_model()
+
+
+@st.cache_resource
+def compute_embeddings(questions):
+    embeddings = model.encode(
+        list(questions),
+        convert_to_tensor=True,
+    )
     return embeddings
 
 def find_answer(query, data, embeddings, threshold=THRESHOLD):
@@ -55,7 +67,13 @@ st.markdown("<h1 style='text-align:center; color:#4B7BEC;'>📘 AI & DS Knowledg
 st.markdown("---")
 
 data = load_data()
-embeddings = compute_embeddings(data)
+
+questions = tuple(
+    item["question"]
+    for item in data
+)
+
+embeddings = compute_embeddings(questions)
 
 # User Query
 st.markdown("### Ask a Question")
@@ -67,10 +85,11 @@ if query:
     if best_idx is not None:
         # Direct Answer Card
         entry = data[best_idx]
-        st.markdown(f"<div style='padding:15px; border-radius:10px; background-color:#F8F9FA; box-shadow:0 4px 6px rgba(0,0,0,0.1);'><b>Answer:</b> {entry['answer']}</div>", unsafe_allow_html=True)
-        
+        st.markdown("**Answer:**")
+        st.write(entry["answer"])        
         if entry.get("examples"):
-            st.markdown(f"<i>Examples:</i> {', '.join(entry['examples'])}", unsafe_allow_html=True)
+            st.markdown("**Examples:**")
+            st.write(", ".join(entry["examples"]))
         if entry.get("references"):
             st.markdown("**References:**")
             for ref in entry["references"]:
