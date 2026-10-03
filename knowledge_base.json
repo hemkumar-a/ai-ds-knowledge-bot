@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What is Artificial Intelligence?",
+    "answer": "Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn like humans, performing tasks such as visual perception, speech recognition, and decision-making.",
+    "topic": "AI Fundamentals",
+    "keywords": ["AI", "Machine Intelligence", "Simulation"],
+    "examples": ["Virtual assistants like Siri", "Recommendation systems on Netflix", "Autonomous vehicles"],
+    "references": ["https://en.wikipedia.org/wiki/Artificial_intelligence"],
+    "similar_questions": ["Define AI in simple terms.", "What are the main goals of AI?"]
+  },
+  {
+    "question": "What is Machine Learning?",
+    "answer": "Machine Learning (ML) is a subset of AI where algorithms enable computers to learn from and make predictions or decisions based on data without being explicitly programmed for every task.",
+    "topic": "Machine Learning",
+    "keywords": ["ML", "Algorithms", "Data Learning"],
+    "examples": ["Spam email detection", "Fraud detection in banking", "Predictive maintenance in manufacturing"],
+    "references": ["https://en.wikipedia.org/wiki/Machine_learning"],
+    "similar_questions": ["Explain the basics of Machine Learning.", "How does ML differ from traditional programming?"]
+  },
+  {
+    "question": "What is Supervised Learning?",
+    "answer": "Supervised Learning is a type of ML where the model is trained on labeled data, meaning the input data is paired with the correct output, allowing the algorithm to learn the mapping from inputs to outputs.",
+    "topic": "Machine Learning",
+    "keywords": ["Supervised Learning", "Labeled Data", "Training"],
+    "examples": ["Image classification", "House price prediction", "Medical diagnosis from symptoms"],
+    "references": ["https://scikit-learn.org/stable/supervised_learning.html"],
+    "similar_questions": ["Describe supervised learning with an example.", "What are the key components of supervised learning?"]
+  },
+  {
+    "question": "What is Unsupervised Learning?",
+    "answer": "Unsupervised Learning is a ML technique where the model identifies patterns in unlabeled data without any guidance on what the output should be, often used for clustering or association.",
+    "topic": "Machine Learning",
+    "keywords": ["Unsupervised Learning", "Unlabeled Data", "Clustering"],
+    "examples": ["Customer segmentation", "Anomaly detection", "Dimensionality reduction"],
+    "references": ["https://en.wikipedia.org/wiki/Unsupervised_learning"],
+    "similar_questions": ["Explain unsupervised learning techniques.", "How does unsupervised learning work?"]
+  },
+  {
+    "question": "What is Reinforcement Learning?",
+    "answer": "Reinforcement Learning is a ML paradigm where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties to maximize cumulative reward over time.",
+    "topic": "Machine Learning",
+    "keywords": ["Reinforcement Learning", "Agent", "Rewards"],
+    "examples": ["Game playing AI like AlphaGo", "Robotic control systems", "Stock trading bots"],
+    "references": ["https://en.wikipedia.org/wiki/Reinforcement_learning"],
+    "similar_questions": ["What are the main elements of reinforcement learning?", "Give an example of reinforcement learning in action."]
+  },
+  {
+    "question": "What is Deep Learning?",
+    "answer": "Deep Learning is a subset of ML using neural networks with multiple layers to model complex patterns in data, inspired by the human brain's structure.",
+    "topic": "Deep Learning",
+    "keywords": ["Deep Learning", "Neural Networks", "Layers"],
+    "examples": ["Image recognition in self-driving cars", "Voice assistants", "Natural language translation"],
+    "references": ["https://en.wikipedia.org/wiki/Deep_learning"],
+    "similar_questions": ["How does deep learning differ from traditional ML?", "What are the building blocks of deep learning?"]
+  },
+  {
+    "question": "What is a Neural Network?",
+    "answer": "A Neural Network is a computational model consisting of interconnected nodes (neurons) organized in layers, used to process data and learn representations for tasks like classification.",
+    "topic": "Deep Learning",
+    "keywords": ["Neural Network", "Neurons", "Layers"],
+    "examples": ["Handwriting recognition", "Facial recognition", "Predicting stock prices"],
+    "references": ["https://en.wikipedia.org/wiki/Artificial_neural_network"],
+    "similar_questions": ["Explain the structure of a neural network.", "What is the role of layers in neural networks?"]
+  },
+  {
+    "question": "What is Natural Language Processing?",
+    "answer": "Natural Language Processing (NLP) is a field of AI focused on enabling computers to understand, interpret, and generate human language in a meaningful way.",
+    "topic": "Natural Language Processing",
+    "keywords": ["NLP", "Language Understanding", "Text Processing"],
+    "examples": ["Chatbots like ChatGPT", "Sentiment analysis on social media", "Machine translation services"],
+    "references": ["https://en.wikipedia.org/wiki/Natural_language_processing"],
+    "similar_questions": ["What are the applications of NLP?", "Define NLP and its importance."]
+  }
+]
