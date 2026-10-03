@@ -67,7 +67,7 @@ ai-ds-knowledge-bot/
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
+git clone https://github.com/hemkumar-a/ai-ds-knowledge-bot.git
 cd ai-ds-knowledge-bot
 ```
 
