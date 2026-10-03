@@ -1,10 +1,24 @@
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
 .venv/
 venv/
 env/
-.env
-.streamlit/secrets.toml
+ENV/
+
+# Runtime files
 chat_history.txt
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
