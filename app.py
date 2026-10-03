@@ -16,8 +16,6 @@ def save_data(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
-# ---------------- Embedding Model ----------------
-model = SentenceTransformer(MODEL_NAME)
 
 # ---------------- Embedding Model ----------------
 @st.cache_resource
